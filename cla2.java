@@ -5,7 +5,9 @@ class cla2{
 		int res=0;
 		if(args.length!=3)
 		{
-				System.out.println("need 3 arguments");
+				System.out.println("error: need 3 argouments \ncla2 a b <opcode>");
+				System.out.println("op codes:0-add 1-diff 2-multipy 3-divide");
+				
 				return;
 			
 		}	
