@@ -1,4 +1,4 @@
-// Program to demonstrate arithmetic operations using command-line arguments in Java
+// Program to demonstrate arithmetic operations using command-line arguments 
 // @JIYO P V    Roll no:33
 // 17 November 2025
 
