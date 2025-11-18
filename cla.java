@@ -4,11 +4,16 @@
 
 class cla {
     public static void main(String args[]) {
+        if(args.length==0)
+        {
+            System.out.println("arguments not present.\n usage: cla arg1 arg2 ");
+            return;
+        }
         // Retrieve the first command-line argument as a string
         String a = args[0];
         // Retrieve the second command-line argument as a string
         String b = args[1];
-        // Concatenate the two strings and print the result
-        System.out.print(a + b);
+        // display  arguments
+        System.out.print("a="+a +"  b="+b);
     }
 }
