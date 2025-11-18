@@ -1,4 +1,4 @@
-// Program to concatenate two strings using command-line arguments in Java
+// Program to display two Numbers using command-line arguments in Java
 // @JIYO P V    Roll no:33
 // 17 November 2025
 
@@ -10,9 +10,9 @@ class cla {
             return;
         }
         // Retrieve the first command-line argument as a string
-        String a = args[0];
+        int a = Integer.parseInt(args[0]);
         // Retrieve the second command-line argument as a string
-        String b = args[1];
+        int b = Integer.parseInt(args[1]);
         // display  arguments
         System.out.print("a="+a +"  b="+b);
     }
