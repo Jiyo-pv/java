@@ -54,6 +54,6 @@ class cla2 {
         }
 
         // Print final result
-        System.out.println(res);
+        System.out.println("result:"+res);
     }
 }
