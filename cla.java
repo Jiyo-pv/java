@@ -4,7 +4,7 @@
 
 class cla {
     public static void main(String args[]) {
-        if(args.length==0)
+        if(args.length<2)
         {
             System.out.println("arguments not present.\n usage: cla arg1 arg2 ");
             return;
