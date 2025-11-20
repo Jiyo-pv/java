@@ -1,4 +1,4 @@
-// Program to display two Numbers using command-line arguments in Java
+// Program to display sum of two numbers using command line arguments
 // @JIYO P V    Roll no:33
 // 17 November 2025
 
@@ -14,6 +14,7 @@ class cla {
         // Retrieve the second command-line argument as a string
         int b = Integer.parseInt(args[1]);
         // display  arguments
-        System.out.print("a="+a +"  b="+b);
+        System.out.println("a="+a +"  b="+b);
+        System.out.println("sum="+(a+b));
     }
 }
