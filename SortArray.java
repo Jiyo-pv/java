@@ -1,4 +1,4 @@
-import java.util.Scanner;           ///search no in array
+import java.util.Scanner;           // Sort array
 class SortArray
 {
 
