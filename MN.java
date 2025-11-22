@@ -1,4 +1,4 @@
-import java.util.Scanner;           //diff of 2 nos using while loop
+import java.util.Scanner;           //M to N using 1 while loop
 class MN
 {
 
