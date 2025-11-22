@@ -11,7 +11,7 @@ class MatrixMul
         n=sc.nextInt();
         int a[][]=new int[m][n];
         System.out.println("enter matrix 1");
-        for(i=0;i<n;i++)
+        for(i=0;i<m;i++)
         {
           for(j=0;j<n;j++)
             {
