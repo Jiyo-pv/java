@@ -16,6 +16,11 @@ class Quadratic
         if(desc<0)
         {
             System.out.println("no real roots ");
+            return;
+        }
+        if(desc==0)
+        {
+            System.out.print("root:"+(-b/(2*a)));
         }
     }
 }
