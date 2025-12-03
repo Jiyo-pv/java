@@ -1,7 +1,6 @@
 import java.util.*;           //roots of a qudratic equation
 class Quadratic
 {
-
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
