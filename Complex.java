@@ -27,7 +27,7 @@ class Comp
         Comp r=new Comp();
         r.a=(a*x.a)-(b*x.b);
         r.b=(a*x.b)+(b*x.a);
-        return r;
+        return r; 
     }
 }
 class Complex
