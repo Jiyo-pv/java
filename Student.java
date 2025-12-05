@@ -21,7 +21,7 @@ class StudentInfo
     }
     public void compare(StudentInfo s)
     {
-        if(s.sno!=sno || s.sname!=sname || s.sprogram!=sprogram)
+        if(s.sno!=sno || !s.sname.equals(sname) || !s.sprogram.equals(sprogram))
         {
             System.out.print("both are different data ");
             return;
