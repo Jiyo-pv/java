@@ -1,7 +1,8 @@
 import java.util.*;
 
-// Class to demonstrate finding maximum using a function 
-//JIYO P V  03-12-2025
+// Class to demonstrate finding maximum of 3 nos  using a function 
+//JIYO P V  Roll No:33 
+// 03-12-2025
 class MaxFun
 {
     // Function to return maximum of two numbers
