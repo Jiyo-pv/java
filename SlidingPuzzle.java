@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/*
+15 puzzle game 
+@JIYO P V  Roll No:33
+06 December 2025
+*/
 public class SlidingPuzzle {
 
     static void swap(int[][] a, int pos_r, int pos_c, int row, int col) {
