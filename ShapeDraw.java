@@ -1,3 +1,9 @@
+/* 
+	Demonstration of drawing and moving shapes using interfaces in Java
+	@JIYO P V     Roll No:33
+	31 December 2025
+*/
+
 import java.util.*;
 interface IShape
 {
