@@ -1,3 +1,8 @@
+/* Custom Exception Class for Password Validation in Java
+	   to ensure strong password criteria.
+@JIYO P V     Roll No:33
+31 December 2025
+*/
 import java.util.*;
 class UserE extends Exception
 {
@@ -59,7 +64,7 @@ class Password
 						throw new UserE("at least 1 special char needed");
 					if((isalnum+hasspecial)!=l)
 						throw new UserE("you entered invalid character");
-				
+				System.out.println("strong password");
 		}
 		catch(UserE e)
 		{

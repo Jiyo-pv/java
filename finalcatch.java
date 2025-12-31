@@ -1,3 +1,8 @@
+/* Demonstration of exception propagation and final block in Java 
+   using a custom exception class.
+@JIYO P V     Roll No:33
+31 December 2025
+*/
 class thrownException extends Exception
 {
 		String s;
