@@ -39,15 +39,15 @@ class Searcher extends Thread
 	public void run()
 	{
 		int i=start;
-		while(i<end && Found_Flag.value()==0)
+		while(i<end )
 		{
 			 
 			if(a[i]==key)
 			{	
 				Found_Flag.set();
-				System.out.println("element found by thread "+no);
+				System.out.println("element found by thread   "+no+"index "+i);
 				Found_Flag.done();
-				return;
+				//return;
 				
 			}
 			i++;
@@ -91,4 +91,3 @@ class nthread
 		}
 	}
 }
-
