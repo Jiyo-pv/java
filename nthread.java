@@ -1,3 +1,8 @@
+/*
+	 A simple Java program demonstrating multithreaded search in an array.
+	@JIYO P V     Roll No:33
+	01 january 2026
+*/
 import java.util.*;
 class Found_Flag {
     static int found = 0;
@@ -45,7 +50,7 @@ class Searcher extends Thread
 			if(a[i]==key)
 			{	
 				Found_Flag.set();
-				System.out.println("element found by thread   "+no+"index "+i);
+				System.out.println("element found by thread "+no+" at index "+i);
 				Found_Flag.done();
 				//return;
 				
@@ -64,6 +69,7 @@ class nthread
 		Scanner sc=new Scanner(System.in);
 		System.out.print("enter n:");
 		n=sc.nextInt();
+		System.out.print("enter array elements:");
 		a=new int[n];
 		for(i=0;i<n;i++)
 		{
