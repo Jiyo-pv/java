@@ -1,3 +1,10 @@
+/*
+    Readers-Writers problem in Java.
+    This code demonstrates synchronization between multiple reader and writer threads
+    accessing shared data.      
+    @JIYO P V      roll no: 33    
+    01 january 2026    
+*/
 class SharedData {
     int readers = 0;
     boolean writing = false;
@@ -77,3 +84,5 @@ public class ReadersWritersMain {
         w1.start();
     }
 }
+
+
