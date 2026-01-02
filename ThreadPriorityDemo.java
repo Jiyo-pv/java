@@ -23,14 +23,11 @@ class PriorityThread extends Thread {
 public class ThreadPriorityDemo {
     public static void main(String[] args) {
 
-        PriorityThread t1 =
-                new PriorityThread("Low Priority Thread",Thread.MIN_PRIORITY);   // 1
+        PriorityThread t1 =new PriorityThread("Low Priority Thread",Thread.MIN_PRIORITY);   // 1
 
-        PriorityThread t2 =
-                new PriorityThread("Normal Priority Thread",Thread.NORM_PRIORITY); // 5
+        PriorityThread t2 =new PriorityThread("Normal Priority Thread",Thread.NORM_PRIORITY); // 5
 
-        PriorityThread t3 =
-                new PriorityThread("High Priority Thread", Thread.MAX_PRIORITY);  // 10
+        PriorityThread t3 =new PriorityThread("High Priority Thread", Thread.MAX_PRIORITY);  // 10
 
         t1.start();
         t2.start();
