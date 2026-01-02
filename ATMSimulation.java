@@ -1,3 +1,9 @@
+/*
+    This code simulates an ATM system with multiple users performing
+    deposit and withdrawal operations on a shared bank account using threads.
+    @JIYO P V      roll no: 33    
+    02 january 2026
+*/
 class BankAccount {
      int balance = 1000;
 
