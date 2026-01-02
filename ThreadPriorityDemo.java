@@ -14,20 +14,32 @@ class PriorityThread extends Thread {
     public void run() {
         for (int i = 1; i <= 5; i++) {
             System.out.println(getName() +
-                    " is running with priority " +
-                    getPriority());
+                    " is running (priority = " +
+                    getPriority() + ")");
+
+            try {
+                Thread.sleep(200); // pause for 200 ms
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
         }
     }
 }
 
-public class ThreadPriorityDemo {
+public class ThreadPrioritySleepDemo {
     public static void main(String[] args) {
 
-        PriorityThread t1 =new PriorityThread("Low Priority Thread",Thread.MIN_PRIORITY);   // 1
+        PriorityThread t1 =
+                new PriorityThread("Low Priority Thread",
+                        Thread.MIN_PRIORITY);
 
-        PriorityThread t2 =new PriorityThread("Normal Priority Thread",Thread.NORM_PRIORITY); // 5
+        PriorityThread t2 =
+                new PriorityThread("Normal Priority Thread",
+                        Thread.NORM_PRIORITY);
 
-        PriorityThread t3 =new PriorityThread("High Priority Thread", Thread.MAX_PRIORITY);  // 10
+        PriorityThread t3 =
+                new PriorityThread("High Priority Thread",
+                        Thread.MAX_PRIORITY);
 
         t1.start();
         t2.start();
