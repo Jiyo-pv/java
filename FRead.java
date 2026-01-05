@@ -19,7 +19,7 @@ class FRead
 				ch=fin.read();
 				if(ch==-1)
 					break;
-				System.out.print((char)ch+"\n");
+				System.out.print((char)ch);
 			}
 			fin.close();
 		}
