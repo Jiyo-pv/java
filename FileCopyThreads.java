@@ -15,23 +15,26 @@ class FileCopyThread extends Thread {
     }
 
     public void run() {
-        copyFiles(source, dest);   // ✅ FIXED
+        copyFiles(source, dest);
     }
 
     public void copyFiles(File sourceFile, File destFile) {
 
         if (sourceFile.isDirectory()) {
-            destFile.mkdir();
+            destFile.mkdirs();
+
             File[] files = sourceFile.listFiles();
+            if (files == null) return;
 
             for (File f : files) {
                 File dst = new File(destFile, f.getName());
-
-                // 🔥 create new thread for subfiles also
                 new FileCopyThread(f, dst);
             }
         } else {
             try {
+                // 🔥 IMPORTANT FIX
+                destFile.getParentFile().mkdirs();
+
                 FileInputStream fin = new FileInputStream(sourceFile);
                 FileOutputStream fout = new FileOutputStream(destFile);
 
@@ -43,7 +46,8 @@ class FileCopyThread extends Thread {
                 fin.close();
                 fout.close();
 
-                System.out.println(getName() + " copied " + sourceFile.getName());
+                System.out.println(getName() +
+                        " copied " + sourceFile.getName());
 
             } catch (Exception e) {
                 System.out.println(e);
@@ -59,6 +63,7 @@ class FileCopyThreads {
         File destRoot = new File("C:\\Users\\jiyop\\java\\b");
 
         File[] files = source.listFiles();
+        if (files == null) return;
 
         for (File f : files) {
             File dest = new File(destRoot, f.getName());

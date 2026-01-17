@@ -11,7 +11,7 @@ class FReadSize
 		s=new Scanner(System.in);
 		System.out.println("enter filename:");
 		fn=s.nextLine();
-		int c=0;;
+		int c=0;
 		try
 		{
 			fin=new FileInputStream(fn);
