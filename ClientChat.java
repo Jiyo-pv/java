@@ -1,6 +1,6 @@
 import java.io.*;
 import java.net.*;
-class ClienChat
+class ClientChat
 {
     public static void main(String args[])
     {
