@@ -32,7 +32,7 @@ class FileCopyThread extends Thread {
             }
         } else {
             try {
-                // 🔥 IMPORTANT FIX
+                
                 destFile.getParentFile().mkdirs();
 
                 FileInputStream fin = new FileInputStream(sourceFile);
