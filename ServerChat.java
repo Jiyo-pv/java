@@ -1,4 +1,5 @@
 import java.io.*;
+import java.awt.*;
 import java.net.*;
 class ServerChat
 {
@@ -8,9 +9,12 @@ class ServerChat
         {
             ServerSocket ss=new ServerSocket(1234);
             System.out.println("Server is ready to accept connection");
+            while(true)
+            {
             Socket s=ss.accept();
             System.out.println("Client connected"+s);
             new ClientHandler(s).start();
+            }
         }catch(Exception e)
         {
             System.out.println(e);
@@ -26,7 +30,9 @@ class ClientHandler extends Thread
     }
     public void run()
     {
-        DataInputStream sin=new DataInputStream(s.getInputStream());
+        Desktop dt=Desktop.getDesktop();
+        try{
+            DataInputStream sin=new DataInputStream(s.getInputStream());
             DataOutputStream sout=new DataOutputStream(s.getOutputStream());
             DataInputStream stdin=new DataInputStream(System.in);
             String str="welcome to server";
@@ -37,12 +43,18 @@ class ClientHandler extends Thread
                     break;
                 str=sin.readUTF();
                 System.out.println("Client says:"+str);
+                 dt.browse(new URI("https://www.google.com/search?q="+str));
                 if(str.equals("quit"))
                     break;
                 System.out.print("Enter message for client:");
                 str=stdin.readLine();
+             
 
-
+            }
+        }
+            catch(Exception e)
+            {
+                System.out.println(e);
             }
     }
 }
