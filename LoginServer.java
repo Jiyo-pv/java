@@ -26,11 +26,11 @@ class LoginServer
         ResultSet rs=st.executeQuery();
         if(rs.next())
         {
-            reply="success";
+            reply="Login success";
         }
         else
         {
-            reply="failed";
+            reply=" Login failed";
         }
         dp=new DatagramPacket(reply.getBytes(),reply.length(),client,port);
         ds.send(dp);
