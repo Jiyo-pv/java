@@ -5,7 +5,7 @@ class LoginClient
 {
     public static void main(String args[])throws Exception
     {
-        DatagramSocket ds=new DatagramSocket(1234);
+        DatagramSocket ds=new DatagramSocket(1235);
         InetAddress shost=InetAddress.getByName("localhost");
         Scanner sc=new Scanner(System.in);
         String username,password;
