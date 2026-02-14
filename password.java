@@ -45,7 +45,7 @@ class Password
 							
 						}
 						if(special.toString().contains(String.valueOf(password.charAt(i))))
-						{
+						{ 
 							hasspecial++;
 						}
 						else if(Character.isLetterOrDigit(password.charAt(i)))
